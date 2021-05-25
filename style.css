@@ -9,7 +9,6 @@
     width: 1440px;
     margin: auto;
     border: 2px solid red;
-    padding: 0 50px;
 }
 
 h1, h2
@@ -48,7 +47,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0; padding: 0;
+    margin: 0; padding: 0 50px;
 }
 
 /* --------------- LOGO RESERVIA ---------------------------------------------------------------------------- */
@@ -121,7 +120,7 @@ li
 #intro-recherche
 {
     height: 160px;
-    padding: 0;
+    padding: 0 50px;
 }
 
 /* --------------- INTRODUCTION ----------------------------------------------------------------------------- */
@@ -185,6 +184,11 @@ input
 }
 
 /* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
+
+#filtres-infos
+{
+    padding: 0 50px;
+}
 
 /* --------------- FILTRES ---------------------------------------------------------------------------------- */
 
@@ -305,7 +309,11 @@ h3
 #hebergements
 {
     display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
 }
+
+/* --------------- HEBERGEMENTS MARSEILLE ------------------------------------------------------------------- */
 
 #hebergement-marseille
 {
@@ -327,7 +335,6 @@ h3
     height: 430px;
     margin: 25px 0 25px 40px;
     justify-content: center;
-    border: 2px solid red;
 }
 
 .trio
@@ -335,7 +342,6 @@ h3
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    border: 2px solid blue;
 }
 
 .chambre
@@ -344,15 +350,24 @@ h3
     border-radius: 20px;
     background-color: white;
     margin: 0; padding: 0;
-    border: 2px solid green;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop
+{
+    width: 235px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    margin: 5px;
 }
 
 .chambre img
 {
     width: 235px;
-    height: 115px;
-    margin: 5px;
-    border-radius: 20px 20px 0 0;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 
 .chambre h4
@@ -385,4 +400,90 @@ h3
 h4
 {
     margin: 45px 0 0 40px;
+}
+
+/* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
+
+#populaires
+{
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+#pop-icone
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 40px 0 40px;
+    font-size: 21px;
+}
+
+#proposition-pop
+{
+    width: 340px;
+    height: 500px;
+    margin: 0 0 25px 40px;
+}
+
+.chambre-pop, .chambre-pop02
+{
+    display: flex;
+    height: 145px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 30px 0 0 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-pop, .crop-pop02
+{
+    width: 125px;
+    height: 135px;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
+}
+
+.chambre-pop img
+{
+    height: 135px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.chambre-pop02 img
+{
+    width: 125px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.chambre-pop-info
+{
+    width: 145px;
+    margin: -130px 0 0 150px;
+}
+
+.chambre-pop h4, .chambre-pop02 h4
+{
+    font-size: 16px;
+    margin: 0; padding: 0;
+}
+
+.chambre-pop p, .chambre-pop02 p
+{
+    margin:  10px 0;
+    font-size: 14px;
+}
+
+.chambre-pop .note, .chambre-pop02 .note
+{
+    margin:  35px 0;
+    font-size: 14px;
 }
