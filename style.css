@@ -177,7 +177,24 @@ input
     color: white;
 }
 
+#bouton:hover
+{
+    background-color: #ffffff;
+    border: 2px solid #0065FC;
+    color: #0065FC;
+}
+
 /* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
+
+/* --------------- FILTRES ---------------------------------------------------------------------------------- */
+
+#filtres
+{
+    margin: 15px 0 35px 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
 
 h3
 {
@@ -188,6 +205,8 @@ h3
     color: black;
 }
 
+/* --------------- CATEGORIES DE FILTRES -------------------------------------------------------------------- */
+
 #categories h3
 {
     font-family: Raleway, sans-serif;
@@ -195,13 +214,6 @@ h3
     font-size: 18px;
     margin: 0; padding: 12px 20px 0 60px;
     color: black;
-}
-
-#filtres
-{
-    display: flex;
-    align-items: center;
-    height: 50px;
 }
 
 #categories
@@ -227,6 +239,15 @@ h3
     z-index: 1;
 }
 
+.choix:hover
+{
+    border: 2px solid #0065FC;
+    background-color: white;
+    margin: 0 25px 0 0; padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
 .cercle
 {
     width: 50px;
@@ -237,8 +258,131 @@ h3
     z-index: 2;
 }
 
+.cercle:hover
+{
+    background-color: #0065FC;
+}
+
 .cercle i
 {
     margin-top: 35%;
     color: #0065FC;
+}
+
+.cercle i:hover
+{
+    color: #ffffff;
+}
+
+/* --------------- INFOS ------------------------------------------------------------------------------------ */
+
+#infos
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#info-icon
+{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#info-icon i
+{
+    height: 10px;
+    color: #0065FC;
+    margin-top: 15%;
+}
+
+/* ----- SECTION HEBERGEMENTS ------------------------------------------------------------------------------- */
+
+#hebergements
+{
+    display: flex;
+}
+
+#hebergement-marseille
+{
+    width: 880px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+#hebergement-marseille h2
+{
+    margin: 45px 0 0 40px;
+}
+
+#proposition-chambres
+{
+    width: 800px;
+    height: 430px;
+    margin: 25px 0 25px 40px;
+    justify-content: center;
+    border: 2px solid red;
+}
+
+.trio
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+}
+
+.chambre
+{
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    border: 2px solid green;
+}
+
+.chambre img
+{
+    width: 235px;
+    height: 115px;
+    margin: 5px;
+    border-radius: 20px 20px 0 0;
+}
+
+.chambre h4
+{
+    font-size: 16px;
+    margin: 0 0 0 15px; padding: 0;
+}
+
+.chambre p, .note
+{
+    margin:  5px 0 5px 15px;
+    font-size: 14px;
+}
+
+.tarif
+{
+    font-weight: 700;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+h4
+{
+    margin: 45px 0 0 40px;
 }
