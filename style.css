@@ -175,22 +175,32 @@ input
     font-weight: 700;
     font-size: 18px;
     color: white;
-}    border: 1px solid red;
+}
 
 /* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
 
-#filtres-infos h3
+h3
 {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin: 0; padding: 0;
-    color: red;
+    margin: 0 20px 0 0; padding: 0 10px;
+    color: black;
+}
+
+#categories h3
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0; padding: 12px 20px 0 60px;
+    color: black;
 }
 
 #filtres
 {
     display: flex;
+    align-items: center;
     height: 50px;
 }
 
@@ -199,13 +209,36 @@ input
     display: flex;
 }
 
-.choix
+.bouton
 {
-    display: flex;
-    align-items: center;
+    border-style: none;
+    background-color: white;
+    margin: 0; padding: 0;
 }
 
-.choix i
+.choix
 {
-    
+    height: 46px;
+    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    margin: 0 25px 0 0; padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cercle
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #DEEBFF;
+    position: absolute;
+    z-index: 2;
+}
+
+.cercle i
+{
+    margin-top: 35%;
+    color: #0065FC;
 }
