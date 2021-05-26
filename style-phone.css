@@ -1,0 +1,672 @@
+/* ----- TYPOGRAPHIE ---------------------------------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* ----- GÉNÉRAL -------------------------------------------------------------------------------------------- */
+
+#reservia /* SITE GLOBAL */
+{
+    width: 375px;
+    margin: auto;
+    border: 2px solid blue;
+}
+
+h1, h2
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    margin: 0; padding: 0;
+}
+
+h1
+{
+    margin: 15px 0 15px 0;
+}
+
+p
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0; padding: 0;
+}
+
+a
+{
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+/* ----- HEADER --------------------------------------------------------------------------------------------- */
+
+header
+{
+    height: 150px;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0; padding: 0;
+}
+
+/* --------------- LOGO RESERVIA ---------------------------------------------------------------------------- */
+
+#logo
+{
+    padding-top: 30px;
+    position: absolute;
+}
+
+/* --------------- MENU + INSCRIPTION ----------------------------------------------------------------------- */
+
+#nav-inscription 
+{
+    width: 375px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: flex-end;
+}
+
+/* --------------- MENU ------------------------------------------------------------------------------------- */
+
+ul
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+li
+{
+    width: 187.5px;
+    text-align: center;
+    font-size: 16px;
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+#menu-actif
+{
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+}
+
+#menu-actif a
+{
+    color: #0065FC;
+}
+
+/* --------------- INSCRIPTION ------------------------------------------------------------------------------ */
+
+#inscription
+{
+    padding: 50px 30px 0 0;
+}
+
+#inscription p
+{
+    margin: 0; padding: 0;
+}
+
+#inscription a
+{
+    color: #0065FC;
+    font-weight: 700;
+}
+
+/* ----- SECTION INTRO + RECHERCHE -------------------------------------------------------------------------- */
+
+#intro-recherche
+{
+    height: 160px;
+    padding: 0 50px;
+}
+
+/* --------------- INTRODUCTION ----------------------------------------------------------------------------- */
+
+#intro
+{
+    justify-content: space-between;
+    height: 80px;
+}
+
+/* --------------- RECHERCHE -------------------------------------------------------------------------------- */
+
+#recherche
+{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 13px;
+    width: 420px;
+    background-color: #F2F2F2;
+    margin: 15px 0;
+}
+
+#recherche i
+{
+    width: 50px;
+    text-align: center;
+}
+
+input
+{
+    width: 230px;
+    height: 50px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 15px;
+    border-color: #F2F2F2;
+    border-style: solid;
+}
+
+#bouton
+{
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    background-color: #0065FC;
+    border-style: none;
+    border-radius: 0 13px 13px 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+
+#bouton:hover
+{
+    background-color: #ffffff;
+    border: 2px solid #0065FC;
+    color: #0065FC;
+}
+
+/* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
+
+#filtres-infos
+{
+    padding: 0 50px;
+}
+
+/* --------------- FILTRES ---------------------------------------------------------------------------------- */
+
+#filtres
+{
+    margin: 15px 0 35px 0;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+h3
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 20px 0 0; padding: 0;
+    color: black;
+}
+
+/* --------------- CATEGORIES DE FILTRES -------------------------------------------------------------------- */
+
+#categories
+{
+    display: flex;
+}
+
+.bouton
+{
+    display: flex;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid #F2F2F2;
+    background-color: white;
+    margin: 0 10px 0 0; padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.bouton:hover
+{
+    border: 2px solid #0065FC;
+}
+
+.cercle
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #DEEBFF;
+    position: absolute;
+    margin: -2px 0 0 -2px;
+    z-index: 2;
+}
+
+.cercle:hover
+{
+    background-color: #0065FC;
+}
+
+.cercle i
+{
+    margin-top: 35%;
+    color: #0065FC;
+}
+
+.cercle i:hover
+{
+    color: #ffffff;
+}
+
+.nom-filtre
+{
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 0 5px; padding: 15px 20px 0 55px;
+    color: black;
+}
+
+/* --------------- INFOS ------------------------------------------------------------------------------------ */
+
+#infos
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#info-icon
+{
+    width: 25px;
+    height: 25px;
+    border: 1px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#info-icon i
+{
+    height: 10px;
+    color: #0065FC;
+    margin-top: 15%;
+}
+
+/* ----- SECTION HEBERGEMENTS ------------------------------------------------------------------------------- */
+
+#hebergements
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+/* --------------- HEBERGEMENTS MARSEILLE ------------------------------------------------------------------- */
+
+#hebergement-marseille
+{
+    width: 375px;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: -10px;
+}
+
+#hebergement-marseille h2
+{
+    margin: 45px 50px 0 50px;
+}
+
+#proposition-chambres
+{
+    width: 350px;
+    height: 430px;
+    margin: 25px 50px 25px 50px;
+    justify-content: center;
+}
+
+.trio
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chambre
+{
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop
+{
+    width: 235px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    margin: 5px;
+}
+
+.chambre img
+{
+    width: 235px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.chambre h4
+{
+    font-size: 16px;
+    margin: 10px 0 0 15px; padding: 0;
+}
+
+.chambre p, .note
+{
+    margin:  5px 0 5px 15px;
+    font-size: 14px;
+}
+
+.tarif
+{
+    font-weight: 700;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: #F2F2F2;
+}
+
+h4
+{
+    margin: 45px 50px 0 50px;
+}
+
+/* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
+
+#populaires
+{
+    width: 375px;
+    height: 470px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+
+#pop-icone
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px 50px 0 50px;
+    font-size: 21px;
+}
+
+#proposition-pop
+{
+    width: 350px;
+    height: 300px;
+    margin: 0 50px 25px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chambre-pop, .chambre-pop02
+{
+    width: 400px;
+    display: flex;
+    height: 145px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 30px 0 0 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-pop, .crop-pop02
+{
+    width: 200px;
+    height: 135px;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+    margin: 5px;
+}
+
+.chambre-pop img
+{
+    height: 150px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.chambre-pop02 img
+{
+    width: 200px;
+    position: relative;
+    top: 30%;
+    transform: translate(0%, -50%);
+}
+
+.chambre-pop-info
+{
+    width: 145px;
+    margin: -130px 0 0 220px;
+}
+
+.chambre-pop h4, .chambre-pop02 h4
+{
+    font-size: 16px;
+    margin: 0; padding: 0;
+}
+
+.chambre-pop p, .chambre-pop02 p
+{
+    margin:  10px 0;
+    font-size: 14px;
+}
+
+.chambre-pop .note, .chambre-pop02 .note
+{
+    margin:  35px 0;
+    font-size: 14px;
+}
+
+/* ----- SECTION ACTIVITES ---------------------------------------------------------------------------------- */
+
+#activites
+{
+    padding: 30px 50px 0 50px;
+}
+
+#proposition-activites
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
+}
+
+.duo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* --------------- ACTIVITE 01 ------------------------------------------------------------------------------ */
+
+.activite01
+{
+    height: 445px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 30px; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite01
+{
+    width: 400px;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite01 img
+{
+    height: 445px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.activite01 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 02 ------------------------------------------------------------------------------ */
+
+.activite02
+{
+    height: 235px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite02
+{
+    width: 400px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite02 img
+{
+    width: 400px;
+    position: relative;
+    top: 60%;
+    transform: translate(0%, -50%);
+}
+
+.activite02 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 03 ------------------------------------------------------------------------------ */
+
+.activite03
+{
+    height: 165px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite03
+{
+    width: 400px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite03 img
+{
+    width: 400px;
+    position: relative;
+    top: 75%;
+    transform: translate(0%, -50%);
+}
+
+.activite03 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 04 ------------------------------------------------------------------------------ */
+
+.activite04
+{
+    height: 195px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite04
+{
+    width: 400px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite04 img
+{
+    width: 400px;
+    position: relative;
+    top: 75%;
+    transform: translate(0%, -50%);
+}
+
+.activite04 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* ----- PIED DE PAGE --------------------------------------------------------------------------------------- */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    height: 220px;
+    padding-left: 50px;
+}
+
+.footer
+{
+    width: 340px;
+    padding: 50px 110px 0 0;
+}
+
+footer h3
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+footer p
+{
+    padding-top: 10px;
+}
