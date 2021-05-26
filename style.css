@@ -373,7 +373,7 @@ h3
 .chambre h4
 {
     font-size: 16px;
-    margin: 0 0 0 15px; padding: 0;
+    margin: 10px 0 0 15px; padding: 0;
 }
 
 .chambre p, .note
@@ -486,4 +486,186 @@ h4
 {
     margin:  35px 0;
     font-size: 14px;
+}
+
+/* ----- SECTION ACTIVITES ---------------------------------------------------------------------------------- */
+
+#activites
+{
+    padding: 60px 50px 0 50px;
+}
+
+#proposition-activites
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 60px 0;
+}
+
+.duo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --------------- ACTIVITE 01 ------------------------------------------------------------------------------ */
+
+.activite01
+{
+    height: 445px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite01
+{
+    width: 300px;
+    height: 390px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite01 img
+{
+    height: 445px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.activite01 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 02 ------------------------------------------------------------------------------ */
+
+.activite02
+{
+    height: 235px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite02
+{
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite02 img
+{
+    width: 300px;
+    position: relative;
+    top: 60%;
+    transform: translate(0%, -50%);
+}
+
+.activite02 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 03 ------------------------------------------------------------------------------ */
+
+.activite03
+{
+    height: 165px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite03
+{
+    width: 300px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite03 img
+{
+    width: 300px;
+    position: relative;
+    top: 75%;
+    transform: translate(0%, -50%);
+}
+
+.activite03 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* --------------- ACTIVITE 04 ------------------------------------------------------------------------------ */
+
+.activite04
+{
+    height: 195px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0; padding: 0;
+    box-shadow: 0 0 20px #b1b1b1;
+}
+
+.crop-activite04
+{
+    width: 300px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.activite04 img
+{
+    width: 300px;
+    position: relative;
+    top: 65%;
+    transform: translate(0%, -50%);
+}
+
+.activite04 h4
+{
+    font-size: 16px;
+    margin: 20px 0 0 15px; padding: 0;
+}
+
+/* ----- PIED DE PAGE --------------------------------------------------------------------------------------- */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    height: 220px;
+    padding-left: 50px;
+}
+
+.footer
+{
+    width: 340px;
+    padding: 50px 110px 0 0;
+}
+
+footer h3
+{
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+footer p
+{
+    padding-top: 10px;
 }
