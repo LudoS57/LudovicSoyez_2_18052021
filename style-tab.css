@@ -6,9 +6,9 @@
 
 #reservia /* SITE GLOBAL */
 {
-    width: 1440px;
+    width: 960px;
     margin: auto;
-    border: 2px solid red;
+    border: 2px solid green;
 }
 
 h1, h2
@@ -205,7 +205,7 @@ h3
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin: 0 20px 0 0; padding: 0 10px;
+    margin: 0 20px 0 0; padding: 0;
     color: black;
 }
 
@@ -223,7 +223,7 @@ h3
     border-radius: 30px;
     border: 2px solid #F2F2F2;
     background-color: white;
-    margin: 0 25px 0 0; padding: 0;
+    margin: 0 10px 0 0; padding: 0;
     position: relative;
     z-index: 1;
 }
@@ -264,8 +264,8 @@ h3
 {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    margin: 0; padding: 12px 20px 0 60px;
+    font-size: 16px;
+    margin: 0 0 0 5px; padding: 15px 20px 0 55px;
     color: black;
 }
 
@@ -301,30 +301,32 @@ h3
 {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 /* --------------- HEBERGEMENTS MARSEILLE ------------------------------------------------------------------- */
 
 #hebergement-marseille
 {
-    width: 880px;
+    width: 960px;
     height: 625px;
     border-radius: 20px;
-    background-color: #F2F2F2;
-    margin-top: 20px;
+    background-color: #ffffff;
+    margin-top: -10px;
 }
 
 #hebergement-marseille h2
 {
-    margin: 45px 0 0 40px;
+    margin: 45px 50px 0 50px;
 }
 
 #proposition-chambres
 {
-    width: 800px;
+    width: 860px;
     height: 430px;
-    margin: 25px 0 25px 40px;
+    margin: 25px 50px 25px 50px;
     justify-content: center;
 }
 
@@ -390,18 +392,18 @@ h3
 
 h4
 {
-    margin: 45px 0 0 40px;
+    margin: 45px 50px 0 50px;
 }
 
 /* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
 
 #populaires
 {
-    width: 420px;
-    height: 625px;
-    border-radius: 20px;
+    width: 960px;
+    height: 470px;
     background-color: #F2F2F2;
     margin-top: 20px;
+    border-radius: 0px;
 }
 
 #pop-icone
@@ -409,19 +411,23 @@ h4
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 40px 0 40px;
+    margin: 45px 50px 0 50px;
     font-size: 21px;
 }
 
 #proposition-pop
 {
-    width: 340px;
-    height: 500px;
-    margin: 0 0 25px 40px;
+    width: 860px;
+    height: 300px;
+    margin: 0 50px 25px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .chambre-pop, .chambre-pop02
 {
+    width: 400px;
     display: flex;
     height: 145px;
     border-radius: 20px;
@@ -432,7 +438,7 @@ h4
 
 .crop-pop, .crop-pop02
 {
-    width: 125px;
+    width: 200px;
     height: 135px;
     overflow: hidden;
     border-radius: 15px 0 0 15px;
@@ -441,7 +447,7 @@ h4
 
 .chambre-pop img
 {
-    height: 135px;
+    height: 150px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -449,16 +455,16 @@ h4
 
 .chambre-pop02 img
 {
-    width: 125px;
+    width: 200px;
     position: relative;
-    top: 50%;
+    top: 30%;
     transform: translate(0%, -50%);
 }
 
 .chambre-pop-info
 {
     width: 145px;
-    margin: -130px 0 0 150px;
+    margin: -130px 0 0 220px;
 }
 
 .chambre-pop h4, .chambre-pop02 h4
@@ -483,14 +489,15 @@ h4
 
 #activites
 {
-    padding: 60px 50px 0 50px;
+    padding: 30px 50px 0 50px;
 }
 
 #proposition-activites
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 25px 0 60px 0;
+    margin: 0 0 60px 0;
 }
 
 .duo
@@ -500,6 +507,7 @@ h4
     align-content: space-between;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 /* --------------- ACTIVITE 01 ------------------------------------------------------------------------------ */
@@ -509,13 +517,13 @@ h4
     height: 445px;
     border-radius: 20px;
     background-color: white;
-    margin: 0; padding: 0;
+    margin-top: 30px; padding: 0;
     box-shadow: 0 0 20px #b1b1b1;
 }
 
 .crop-activite01
 {
-    width: 300px;
+    width: 400px;
     height: 390px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -548,7 +556,7 @@ h4
 
 .crop-activite02
 {
-    width: 300px;
+    width: 400px;
     height: 180px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -556,7 +564,7 @@ h4
 
 .activite02 img
 {
-    width: 300px;
+    width: 400px;
     position: relative;
     top: 60%;
     transform: translate(0%, -50%);
@@ -581,7 +589,7 @@ h4
 
 .crop-activite03
 {
-    width: 300px;
+    width: 400px;
     height: 110px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -589,7 +597,7 @@ h4
 
 .activite03 img
 {
-    width: 300px;
+    width: 400px;
     position: relative;
     top: 75%;
     transform: translate(0%, -50%);
@@ -614,7 +622,7 @@ h4
 
 .crop-activite04
 {
-    width: 300px;
+    width: 400px;
     height: 140px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -622,9 +630,9 @@ h4
 
 .activite04 img
 {
-    width: 300px;
+    width: 400px;
     position: relative;
-    top: 65%;
+    top: 75%;
     transform: translate(0%, -50%);
 }
 
