@@ -6,7 +6,7 @@
 
 #reservia /* SITE GLOBAL */
 {
-    width: 1440px;
+    width: 100%;
     margin: auto;
     border: 2px solid red;
 }
@@ -135,24 +135,31 @@ li
 
 #recherche
 {
+    width: 30%;
     height: 50px;
     display: flex;
     align-items: center;
     border-radius: 13px;
-    width: 420px;
     background-color: #F2F2F2;
     margin: 15px 0;
 }
 
 #recherche i
 {
-    width: 50px;
+    width: 10%;
+    min-width: 50px;
     text-align: center;
+}
+
+form
+{
+    width: 100%;
 }
 
 input
 {
-    width: 230px;
+    width: 100%;
+    min-width: 230px;
     height: 50px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -164,7 +171,7 @@ input
 
 #bouton
 {
-    width: 140px;
+    min-width: 140px;
     height: 50px;
     text-align: center;
     background-color: #0065FC;
@@ -182,6 +189,18 @@ input
     border: 2px solid #0065FC;
     color: #0065FC;
 }
+
+#recherche-desktop
+{
+    display: initial;
+}
+
+#recherche-phone
+{
+    display: none;
+}
+
+
 
 /* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
 
@@ -244,18 +263,19 @@ h3
     z-index: 2;
 }
 
-.cercle:hover
+.bouton:hover .cercle
 {
     background-color: #0065FC;
 }
 
 .cercle i
 {
-    margin-top: 35%;
+    font-size: 1.5em;
+    margin-top: 33%;
     color: #0065FC;
 }
 
-.cercle i:hover
+.bouton:hover .cercle i
 {
     color: #ffffff;
 }
@@ -308,8 +328,7 @@ h3
 
 #hebergement-marseille
 {
-    width: 880px;
-    height: 625px;
+    width: 60%;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-top: 20px;
@@ -317,14 +336,13 @@ h3
 
 #hebergement-marseille h2
 {
-    margin: 45px 0 0 40px;
+    margin: 45px 5% 0 5%;
 }
 
 #proposition-chambres
 {
-    width: 800px;
-    height: 430px;
-    margin: 25px 0 25px 40px;
+    width: 90%;
+    margin: 25px 5%;
     justify-content: center;
 }
 
@@ -337,7 +355,8 @@ h3
 
 .chambre
 {
-    height: 200px;
+    width: 30%;
+    height: auto;
     border-radius: 20px;
     background-color: white;
     margin: 0; padding: 0;
@@ -346,7 +365,6 @@ h3
 
 .crop
 {
-    width: 235px;
     height: 115px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -355,10 +373,12 @@ h3
 
 .chambre img
 {
-    width: 235px;
+    width: 100%;
+    height: 100%;
     position: relative;
     top: 50%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .chambre h4
@@ -371,6 +391,11 @@ h3
 {
     margin:  5px 0 5px 15px;
     font-size: 14px;
+}
+
+.note
+{
+    padding-bottom: 10px;
 }
 
 .tarif
@@ -391,14 +416,14 @@ h3
 h4
 {
     margin: 45px 0 0 40px;
+    padding-bottom: 30px;
 }
 
 /* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
 
 #populaires
 {
-    width: 420px;
-    height: 625px;
+    width: 35%;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-top: 20px;
@@ -409,24 +434,24 @@ h4
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 40px 0 40px;
+    margin: 45px 7.5% 0 7.5%;
     font-size: 21px;
 }
 
 #proposition-pop
 {
-    width: 340px;
-    height: 500px;
-    margin: 0 0 25px 40px;
+    width: 85%;
+    margin: 25px 7.5% 30px 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .chambre-pop, .chambre-pop02
 {
-    display: flex;
-    height: 145px;
     border-radius: 20px;
     background-color: white;
-    margin: 30px 0 0 0; padding: 0;
+    margin:0; padding: 0;
     box-shadow: 0 0 20px #b1b1b1;
 }
 
@@ -457,8 +482,7 @@ h4
 
 .chambre-pop-info
 {
-    width: 145px;
-    margin: -130px 0 0 150px;
+
 }
 
 .chambre-pop h4, .chambre-pop02 h4
