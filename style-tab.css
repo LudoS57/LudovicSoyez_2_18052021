@@ -6,7 +6,7 @@
 
 #reservia /* SITE GLOBAL */
 {
-    width: 960px;
+    width: 100%;
     margin: auto;
     border: 2px solid green;
 }
@@ -47,7 +47,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 0; padding: 0 50px;
+    margin: 0; padding: 0 5%;
 }
 
 /* --------------- LOGO RESERVIA ---------------------------------------------------------------------------- */
@@ -120,7 +120,7 @@ li
 #intro-recherche
 {
     height: 160px;
-    padding: 0 50px;
+    padding: 0 5%;
 }
 
 /* --------------- INTRODUCTION ----------------------------------------------------------------------------- */
@@ -135,24 +135,31 @@ li
 
 #recherche
 {
+    width: 75%;
     height: 50px;
     display: flex;
     align-items: center;
     border-radius: 13px;
-    width: 420px;
     background-color: #F2F2F2;
     margin: 15px 0;
 }
 
 #recherche i
 {
-    width: 50px;
+    width: 10%;
+    min-width: 50px;
     text-align: center;
+}
+
+form
+{
+    width: 100%;
 }
 
 input
 {
-    width: 230px;
+    width: 100%;
+    min-width: 230px;
     height: 50px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -164,7 +171,7 @@ input
 
 #bouton
 {
-    width: 140px;
+    min-width: 140px;
     height: 50px;
     text-align: center;
     background-color: #0065FC;
@@ -183,11 +190,23 @@ input
     color: #0065FC;
 }
 
+#recherche-desktop
+{
+    display: initial;
+}
+
+#recherche-phone
+{
+    display: none;
+}
+
+
+
 /* ----- SECTION FILTRES + INFO ----------------------------------------------------------------------------- */
 
 #filtres-infos
 {
-    padding: 0 50px;
+    padding: 0 5%;
 }
 
 /* --------------- FILTRES ---------------------------------------------------------------------------------- */
@@ -196,8 +215,7 @@ input
 {
     margin: 15px 0 35px 0;
     display: flex;
-    align-items: center;
-    height: 50px;
+    flex-direction: column;
 }
 
 h3
@@ -205,7 +223,7 @@ h3
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 18px;
-    margin: 0 20px 0 0; padding: 0;
+    margin: 0 20px 0 0; padding: 0 10px;
     color: black;
 }
 
@@ -214,16 +232,19 @@ h3
 #categories
 {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .bouton
 {
     display: flex;
+    align-items: center;
     height: 50px;
     border-radius: 30px;
     border: 2px solid #F2F2F2;
     background-color: white;
-    margin: 0 10px 0 0; padding: 0;
+    margin: 10px 25px 0 0; padding: 0;
     position: relative;
     z-index: 1;
 }
@@ -244,18 +265,19 @@ h3
     z-index: 2;
 }
 
-.cercle:hover
+.bouton:hover .cercle
 {
     background-color: #0065FC;
 }
 
 .cercle i
 {
-    margin-top: 35%;
+    font-size: 1.5em;
+    margin-top: 33%;
     color: #0065FC;
 }
 
-.cercle i:hover
+.bouton:hover .cercle i
 {
     color: #ffffff;
 }
@@ -264,8 +286,8 @@ h3
 {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    margin: 0 0 0 5px; padding: 15px 20px 0 55px;
+    font-size: 18px;
+    margin: 0; padding: 0 20px 0 60px;
     color: black;
 }
 
@@ -399,7 +421,7 @@ h4
 
 #populaires
 {
-    width: 960px;
+    width: 100%;
     height: 470px;
     background-color: #F2F2F2;
     margin-top: 20px;
