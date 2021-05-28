@@ -681,6 +681,7 @@ h4
 footer
 {
     display: flex;
+    justify-content: space-between;
     background-color: #F2F2F2;
     height: 220px;
     padding-left: 50px;

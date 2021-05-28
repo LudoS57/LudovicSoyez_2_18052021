@@ -332,7 +332,7 @@ h3
 
 #hebergement-marseille
 {
-    width: 960px;
+    width: 100%;
     height: 625px;
     border-radius: 20px;
     background-color: #ffffff;
@@ -341,15 +341,13 @@ h3
 
 #hebergement-marseille h2
 {
-    margin: 45px 50px 0 50px;
+    margin: 45px 5% 0 5%;
 }
 
 #proposition-chambres
 {
-    width: 860px;
-    height: 430px;
-    margin: 25px 50px 25px 50px;
-    justify-content: center;
+    width: 90%;
+    margin: 25px 5% 25px 5%;
 }
 
 .trio
@@ -361,7 +359,7 @@ h3
 
 .chambre
 {
-    height: 200px;
+    width: 30%;
     border-radius: 20px;
     background-color: white;
     margin: 0; padding: 0;
@@ -370,7 +368,7 @@ h3
 
 .crop
 {
-    width: 235px;
+    width: 95.5%%;
     height: 115px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -379,21 +377,23 @@ h3
 
 .chambre img
 {
-    width: 235px;
+    width: 100%;
+    min-width: 180px;
     position: relative;
     top: 50%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .chambre h4
 {
     font-size: 16px;
-    margin: 10px 0 0 15px; padding: 0;
+    margin: 5% 0 0 5%; padding: 0;
 }
 
 .chambre p, .note
 {
-    margin:  5px 0 5px 15px;
+    margin:  5% 0 5% 5%;
     font-size: 14px;
 }
 
@@ -414,7 +414,7 @@ h3
 
 h4
 {
-    margin: 45px 50px 0 50px;
+    margin: 45px 5% 0 5%;
 }
 
 /* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
@@ -422,7 +422,6 @@ h4
 #populaires
 {
     width: 100%;
-    height: 470px;
     background-color: #F2F2F2;
     margin-top: 20px;
     border-radius: 0px;
@@ -433,15 +432,14 @@ h4
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 45px 50px 0 50px;
+    margin: 45px 5% 0 5%;
     font-size: 21px;
 }
 
 #proposition-pop
 {
-    width: 860px;
-    height: 300px;
-    margin: 0 50px 25px 50px;
+    width: 90%;
+    margin: 0 5% 45px 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -449,9 +447,8 @@ h4
 
 .chambre-pop, .chambre-pop02
 {
-    width: 400px;
+    width: 45%;
     display: flex;
-    height: 145px;
     border-radius: 20px;
     background-color: white;
     margin: 30px 0 0 0; padding: 0;
@@ -460,8 +457,8 @@ h4
 
 .crop-pop, .crop-pop02
 {
-    width: 200px;
-    height: 135px;
+    width: 40%;
+    height: 165px;
     overflow: hidden;
     border-radius: 15px 0 0 15px;
     margin: 5px;
@@ -469,41 +466,52 @@ h4
 
 .chambre-pop img
 {
-    height: 150px;
+    height: 100%;
     position: relative;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 }
 
 .chambre-pop02 img
 {
-    width: 200px;
+    width: 100%;
+    min-width: 125px;
     position: relative;
-    top: 30%;
-    transform: translate(0%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .chambre-pop-info
 {
-    width: 145px;
-    margin: -130px 0 0 220px;
+    padding: 0 5%;
+}
+
+.chambre-pop a, .chambre-pop02 a
+{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
 }
 
 .chambre-pop h4, .chambre-pop02 h4
 {
     font-size: 16px;
     margin: 0; padding: 0;
+    margin-top: 10%;
 }
 
 .chambre-pop p, .chambre-pop02 p
 {
-    margin:  10px 0;
+    margin:  5% 0;
     font-size: 14px;
 }
 
 .chambre-pop .note, .chambre-pop02 .note
 {
-    margin:  35px 0;
+    margin: 15% 0 5% 0;
     font-size: 14px;
 }
 
@@ -511,7 +519,7 @@ h4
 
 #activites
 {
-    padding: 30px 50px 0 50px;
+    padding: 30px 5% 0 5%;
 }
 
 #proposition-activites
@@ -524,6 +532,7 @@ h4
 
 .duo
 {
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -536,6 +545,7 @@ h4
 
 .activite01
 {
+    width: 45%;
     height: 445px;
     border-radius: 20px;
     background-color: white;
@@ -545,7 +555,7 @@ h4
 
 .crop-activite01
 {
-    width: 400px;
+    width: 100%;
     height: 390px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -553,22 +563,23 @@ h4
 
 .activite01 img
 {
-    height: 445px;
+    height: 460px;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -5%);
 }
 
 .activite01 h4
 {
     font-size: 16px;
-    margin: 20px 0 0 15px; padding: 0;
+    margin: 5% 0 0 5%; padding: 0;
 }
 
 /* --------------- ACTIVITE 02 ------------------------------------------------------------------------------ */
 
 .activite02
 {
+    width: 100%;
     height: 235px;
     border-radius: 20px;
     background-color: white;
@@ -578,7 +589,6 @@ h4
 
 .crop-activite02
 {
-    width: 400px;
     height: 180px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -586,7 +596,7 @@ h4
 
 .activite02 img
 {
-    width: 400px;
+    width: 100%;
     position: relative;
     top: 60%;
     transform: translate(0%, -50%);
@@ -595,13 +605,14 @@ h4
 .activite02 h4
 {
     font-size: 16px;
-    margin: 20px 0 0 15px; padding: 0;
+    margin: 5% 0 0 5%; padding: 0;
 }
 
 /* --------------- ACTIVITE 03 ------------------------------------------------------------------------------ */
 
 .activite03
 {
+    width: 100%;
     height: 165px;
     border-radius: 20px;
     background-color: white;
@@ -611,7 +622,6 @@ h4
 
 .crop-activite03
 {
-    width: 400px;
     height: 110px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -619,7 +629,8 @@ h4
 
 .activite03 img
 {
-    width: 400px;
+    width: 100%;
+    min-height: 175px;
     position: relative;
     top: 75%;
     transform: translate(0%, -50%);
@@ -628,13 +639,14 @@ h4
 .activite03 h4
 {
     font-size: 16px;
-    margin: 20px 0 0 15px; padding: 0;
+    margin: 5% 0 0 5%; padding: 0;
 }
 
 /* --------------- ACTIVITE 04 ------------------------------------------------------------------------------ */
 
 .activite04
 {
+    width: 100%;
     height: 195px;
     border-radius: 20px;
     background-color: white;
@@ -644,7 +656,6 @@ h4
 
 .crop-activite04
 {
-    width: 400px;
     height: 140px;
     overflow: hidden;
     border-radius: 15px 15px 0 0;
@@ -652,32 +663,35 @@ h4
 
 .activite04 img
 {
-    width: 400px;
+   
+    width: 100%;
+    min-height: 275px;
     position: relative;
     top: 75%;
-    transform: translate(0%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .activite04 h4
 {
     font-size: 16px;
-    margin: 20px 0 0 15px; padding: 0;
+    margin: 5% 0 0 5%; padding: 0;
 }
 
 /* ----- PIED DE PAGE --------------------------------------------------------------------------------------- */
 
 footer
 {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     background-color: #F2F2F2;
-    height: 220px;
-    padding-left: 50px;
 }
 
 .footer
 {
-    width: 340px;
-    padding: 50px 110px 0 0;
+    width: 20%;
+    padding: 5%;
 }
 
 footer h3
