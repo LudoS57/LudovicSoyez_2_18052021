@@ -8,7 +8,6 @@
 {
     width: 100%;
     margin: auto;
-    border: 2px solid red;
 }
 
 h1, h2
@@ -416,8 +415,7 @@ h3
 
 h4
 {
-    margin: 10% 0 0 5%;
-    padding-bottom: 30px;
+    margin: 40px 0 40px 5%;
 }
 
 /* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */

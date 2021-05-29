@@ -8,7 +8,6 @@
 {
     width: 100%;
     margin: auto;
-    border: 2px solid blue;
 }
 
 h1, h2
@@ -54,7 +53,7 @@ header
 
 #logo
 {
-    padding: 5% 0 0 5%;
+    padding: 15px 0 0 5%;
     position: absolute;
 }
 
@@ -342,7 +341,6 @@ h3
 #hebergement-marseille
 {
     width: 100%;
-    height: auto;
     border-radius: 20px;
     background-color: #ffffff;
     margin-top: -10px;
@@ -423,7 +421,7 @@ h3
 
 h4
 {
-    margin: 45px 5% 0 5%;
+    margin: 40px 5%;
 }
 
 /* --------------- LES PLUS POPULAIRES ---------------------------------------------------------------------- */
